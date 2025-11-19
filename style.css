@@ -189,6 +189,7 @@ footer {
                 color: var(--cor-branca);
                 text-decoration: none;
                 font-weight: 300;
+                line-height: 1.9375rem;
             }
         }
     }
