@@ -147,6 +147,13 @@ main {
 footer {
     padding: 3.125rem 1.25rem 2.8125rem;
     background-color: var(--cor-titulo);
+    
+    h2 {
+                color: var(--cor-branca);
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-bottom: .625rem;
+            }
 
     .logo {
         width: fit-content;
@@ -165,6 +172,7 @@ footer {
         font-size: .875rem;
         color: var(--cor-branca);
         line-height: 1.375rem;
+        max-width: 310px;
     }
 
     .social {
@@ -174,8 +182,11 @@ footer {
     }
 
     .informacoes {
+        display: flex;
+        gap: 2rem;
 
-        .descobrir {
+        .descobrir,
+        .categorias {
             display: flex;
             flex-direction: column;
 
@@ -185,12 +196,42 @@ footer {
                 font-weight: 600;
                 margin-bottom: .625rem;
             }
-            a{
+
+            a {
                 color: var(--cor-branca);
                 text-decoration: none;
                 font-weight: 300;
                 line-height: 1.9375rem;
             }
         }
+    }
+
+    .contato {
+        margin-bottom: 2.5rem;
+        max-width: 19.375rem;
+
+        address {
+            margin-bottom: 2rem;
+        }
+
+        address,
+        a {
+            color: var(--cor-branca);
+            text-decoration: none;
+            font-weight: 300;
+            line-height: 1.9375;
+        }
+    }
+
+    hr {
+        opacity: 30%;
+        margin-bottom: 1.4375rem;
+    }
+
+    small {
+        font-size: .8125rem;
+        color: var(--cor-branca);
+        display: block;
+        text-align: center;
     }
 }
